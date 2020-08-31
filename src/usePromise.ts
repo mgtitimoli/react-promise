@@ -3,13 +3,13 @@ import * as withCancelablePromise from "@mgtitimoli/utils-promise/dist/cancelabl
 import {promiseStatuses} from "@mgtitimoli/utils-promise/dist/promiseStatus";
 import {useEffect, useState} from "react";
 
-import type {SetStateFrom} from "@mgtitimoli/react-state";
+import type {ReactSetStateFrom} from "@mgtitimoli/react-state";
 
 import * as withUsePromiseState from "./usePromiseState";
 
 import type {UsePromiseState} from "./usePromiseState";
 
-type SetUsePromiseState<TResult> = SetStateFrom<UsePromiseState<TResult>>;
+type SetUsePromiseState<TResult> = ReactSetStateFrom<UsePromiseState<TResult>>;
 
 const onPromiseRejected = <TResult>(
   setUsePromiseState: SetUsePromiseState<TResult>
