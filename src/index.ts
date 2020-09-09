@@ -7,3 +7,4 @@ export type {
   RejectedUsePromiseState,
   UsePromiseState
 } from "./usePromiseState";
+export type {UsePromiseStatus} from "./usePromiseStatus";
